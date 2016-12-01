@@ -1,0 +1,27 @@
+<p>
+  Databinding Component
+</p>
+
+{{stringInterpolation}} || {{numberInterpolation}}
+
+<hr>
+<h2>Property Binding</h2>
+<input type="text" value="{{stringInterpolation}}">   <!-- This is String Interpolation -->
+<br>
+<input type="text" [value]="stringInterpolation">     <!-- This is Value Property Binding -->
+<br>
+<!-- ngClass and ngStyle are both examples of Property Binding-->
+<p [ngClass]="{redBorder: onTest()}">Is this styled?</p>
+<p [ngStyle]="{color: 'green'}">Is this styled?</p>
+
+<hr>
+<h3>Custom Property Binding</h3>
+<app-property-binding [result]="10"></app-property-binding>
+
+<hr>
+<h3>Event Binding</h3>
+<app-event-binding (clicked)="onClicked($event)"></app-event-binding>
+
+<hr>
+<h3>Two-Way Data Binding</h3>
+<app-two-way-binding></app-two-way-binding>
