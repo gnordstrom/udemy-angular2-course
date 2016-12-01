@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
 
+import { LogService } from './service/log.service';
+
 import { AppComponent }   from './app.component';
 import { ServiceComponent } from "./service/service.component";
 import { CmpAComponent } from "./service/cmp-a.component";
@@ -14,7 +16,7 @@ import { CmpBComponent } from "./service/cmp-b.component";
         CmpBComponent
     ],
     imports: [BrowserModule],
-    providers: [],
+    providers: [LogService],
     bootstrap: [AppComponent]
 })
 export class AppModule {}
