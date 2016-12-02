@@ -6,8 +6,12 @@
 class Car {
     engineName: string;
     gears: number;
+
+    // Creates a private variable speed 
     private speed: number;
 
+    // Takes the argument and assigns it to the speed variable created above
+    // Sets the speed = to input, OR 0
     constructor(speed: number) {
         this.speed = speed || 0;
     }
@@ -23,7 +27,7 @@ class Car {
     getSpeed():void {
         console.log(this.speed);
     }
-
+    // Static means it's set and accessible whenever I want. Don't need to specify when creating new car
     static numberOfWheels(): number {
         return 4;
     }

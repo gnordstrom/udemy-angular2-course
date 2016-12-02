@@ -8,6 +8,7 @@ interface User {
     username: string;
     password: string;
     confirmPassword?: string; // Optional property => Does not have to be implemented
+                // The ? makes the above line optional, not required.
 }
 
 let user:User;
